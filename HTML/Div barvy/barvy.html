@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <title>
+        Colored divs
+    </title>
+    
+    <style>
+        body {
+            color: brown;
+        }
+
+        #horni {
+            width: 100%;
+            height: 150px;
+            background-color: red;
+        }
+
+        #horniVlevo {
+            width: 80%;
+            height: 150px;
+            background-color: orange;
+        }
+
+        .stredni {
+            width: 100%;
+            height: 300px;
+            background-color: blue;
+        }
+        
+        .stredniStred {
+            width: 90%;
+            height: 300px;
+            background-color: violet;
+        }
+
+        #stredniVlevo1 {
+            width: 15%;
+            height: 300px;
+            background-color: yellow;
+        }
+
+        #stredniVlevo2 {
+            width: 15%;
+            height: 300px;
+            background-color: green;
+        }
+
+        #dole {
+            width: 100%;
+            height: 100px;
+            background-color: skyblue;
+        }
+    </style>
+    
+    <body>
+        <!-- div vytvoří místo, které můžu vytvarovat pomocí stylů -->
+        <div id="horni">
+            horní
+            <!-- divy můžu zasunovat do sebe, nemůžou přesáhnout prostor divu nad nimi
+                 tvarují se směrem od levého horního rohu -->
+            <div id="horniVlevo">
+                horní vlevo
+            </div>
+        </div>
+        <!-- divy na stejné úrovni se posunou vedle sebe, v tomto případě už tam není místo,
+             takže jsou pod sebou -->
+        <div class="stredni">
+            střední
+            <div class="stredniStred">
+                střední střed
+                <div id="stredniVlevo1">
+                    střední vlevo
+                </div>
+            </div>
+        </div>
+        <div class="stredni">
+            střední
+            <div class="stredniStred">
+                střední střed
+                <div id="stredniVlevo2">
+                    střední vlevo
+                </div>
+            </div>
+        </div>
+        <div id="dole">
+            dole
+        </div>
+    </body>
+</html>

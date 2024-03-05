@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: #0080ff;
+                padding-top: 25vh; /*  */
+                display: flex;
+            }
+
+            div {
+                background-color: #eeeeee;
+                text-align: center;
+                height: 50px;
+                width: 60px;
+                padding: 5%; /* zvětší prvek, ale zachová např. pozici textu
+                                můžeš vyzkoušet nastavit manuálně height, width pomocí pixelů */
+                font-size: 200%;
+                font-family: "Arial Black";
+                border: 1px solid #000000;
+                margin: auto; /* podobný paddingu, ale odtlačí od sebe ostatní prvky, zanechává prázdné místo */
+                border-radius: 80px / 70px; /* zakulacení rohů */
+            }
+            div:hover { /* : mění styl u prvků vhodného typu,
+                             pokud u nich zaznamená vhodnou činnost
+                             hover - najetí myší
+                             active - kliknutí */
+                border: 2px solid #7700ff;
+                box-shadow: 0 0 20px #000000;
+            }
+
+            div:active {
+                border: #0080ff;
+                box-shadow: inset 0 0 20px #000000;
+            }
+        </style>
+    </head>
+    <body>
+        <div>JF</div>
+    </body>
+</html>

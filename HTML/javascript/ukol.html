@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Checker</title>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    label {
+      margin-bottom: 10px;
+    }
+
+    input[type="password"] {
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <label for="password">Insert Password:</label>
+    <input type="password" id="password">
+    <button type="button" onclick="check()">Check</button>
+    <p id="result"></p>
+  </form>
+
+  <script>
+    function leak() {
+      const password = document.getElementById('password').value;
+      const result = document.getElementById('result');
+
+      result.textContent = password;
+      result.style.color = 'green';
+    }
+
+    function check() {
+      const password = document.getElementById('password').value;
+      const result = document.getElementById('result');
+
+      const passwordLength = password.length;
+
+      if(passwordLength >= 6) {
+        result.textContent = "Heslo je OK";
+        result.style.color = 'green';
+      } else {
+        result.textContent = 'Heslo není OK, musí mít nejméně 6 znaků';
+        result.style.color = 'red';
+      }
+    }
+  </script>
+</body>
+</html>

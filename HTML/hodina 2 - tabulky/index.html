@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table,
+            tr,
+            th,
+            td{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <table cellspacing = "2">
+            <!--rowspan řádky
+                colspan sloupce-->
+            <tr>
+                <th>1.sloupec</th>
+                <th>2.sloupec</th>
+                <th>3.sloupec</th>
+                <th>4.sloupec</th>
+                <th>5.sloupec</th>
+            </tr>
+            <tr>
+                <td>.</td>
+                <td colspan="3">.</td>
+                <td>.</td>
+            </tr>
+            <tr>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+                <td rowspan="2">.</td>
+            </tr>
+            <tr>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+
+            </tr>
+        </table>
+
+    </body>
+</html>

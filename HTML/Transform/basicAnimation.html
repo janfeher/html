@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .square{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border-radius: 40%;
+                animation: pulsing 1000ms linear infinite;
+            }
+
+            @keyframes pulsing {
+                0% {
+                    opacity: 1;
+                    width: 100px;
+                    height: 100px;
+                }
+
+                20% {
+                    opacity: 1;
+                    width: 120px;
+                    height: 120px;
+                }
+
+                40% {
+                    opacity: 1;
+                    width: 140px;
+                    height: 140px;
+                }
+
+                60% {
+                    opacity: 1;
+                    width: 160px;
+                    height: 160px;
+                }
+
+                80% {
+                    opacity: 1;
+                    width: 180px;
+                    height: 180px;
+                    background-color: orange;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="square">
+        </div>
+    </body>
+</html>

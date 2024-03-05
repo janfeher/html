@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Objednávka
+    </title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        table {
+            border: 3px solid orangered;
+            border-collapse: collapse;
+            width: 70%;
+            margin-inline: auto;
+        }
+        th {
+            border: 1px solid white;
+            border-collapse: collapse;
+            background-color: yellow;
+        }
+        td {
+            border: 1px solid white;
+            border-collapse: collapse;
+            background-color: orange;
+        }
+        .odeslat {
+            background-color: orange;
+        }
+        .text {
+            width: 90%;
+            background-color: orange;
+            border-color: orange;
+        }
+        #odeslat {
+            padding: 10px;
+            color: white;
+            background-color: orangered;
+        }
+    </style>
+    <body>
+        <table>
+            <tr>
+                <th colspan="2">
+                    Objednávka
+                </th>
+            </tr>
+            <tr class="text">
+                <td>
+                    Jméno:
+                </td>
+                <td>
+                    <input type="text" name="krestni" id="jmeno" class="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Příjmení:
+                </td>
+                <td>
+                    <input type="text" name="prijmeni" id="jmeno" class="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Město:
+                </td>
+                <td>
+                    <input type="text" name="mesto" id="mesto" class="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Doprava:
+                </td>
+                <td>
+                    <label>Pošta</label>
+                    <input type="radio" name="doprava" id="posta">
+                    <br>
+
+                    <label>DPD</label>
+                    <input type="radio" name="doprava" id="dpd">
+                    <br>
+
+                    <label>PPL</label>
+                    <input type="radio" name="doprava" id="ppl">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Souhlasím s <a href="https://policies.google.com/terms?hl=cs">podmínkami</a>
+                    <input type="checkbox" name="podminky" id="podminky">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Zabalit jako dárek
+                    <input type="checkbox" name="darek" id="darek">
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2" class="odeslat">
+                    <form action="https://cs.wiktionary.org/wiki/odeslat">
+                        <input type="submit" value="Odeslat" name="odeslat" id="odeslat" class="odeslat">
+                    </form>
+                </th>
+            </tr>
+        </table>
+    </body>
+</html>

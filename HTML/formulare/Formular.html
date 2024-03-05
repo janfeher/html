@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: royalblue;
+        }
+        table {
+            border: 3px solid black;
+            border-collapse: collapse;
+            background-color: white;
+            margin-inline: auto;
+            margin-top: 10%;
+            width: 35%;
+            min-width: 500px;
+            height: 700px;
+        }
+        tr {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .nadpis {
+            background-color: green;
+        }
+        </style>
+    <body>
+        <table>
+            <tr>
+                <th colspan="2" class="nadpis">Formulář</th>
+            </tr>
+            <tr>
+                <td>Jméno:</td>
+                <td>
+                    <form>
+                        <input type="text" name="jmeno" id="jmeno">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Heslo:</td>
+                <td>
+                    <form>
+                        <input type="password" name="heslo" id="heslo">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Pohlaví:</td>
+                <td>
+                    <form>
+                        <input type="radio" name="pohlavi" id="muz">
+                        <label for="muz">Muž</label>
+                        <input type="radio" name="pohlavi" id="zena">
+                        <label for="zena">Žena</label>
+                        <input type="radio" name="pohlavi" id="jine">
+                        <label for="jine">Jiné</label>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Znalosti:</td>
+                <td>
+                    <form>
+                        <input type="checkbox" name="znalosti" id="html">
+                        <label for="html">HTML</label>
+                        <input type="checkbox" name="znalosti" id="css">
+                        <label for="css">CSS</label>
+                        <input type="checkbox" name="znalosti" id="matematika">
+                        <label for="matematika">Matematika</label>                       
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <form>
+                        <input type="submit" name="odeslat" id="odeslat">
+                    </form>
+                </th>
+            </tr>
+        </table>
+    </body>
+</html>

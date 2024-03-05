@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mock List</title>
+	<style>
+		li {
+			background-color: #fff;
+			color: black;
+			padding: 10px;
+			margin-bottom: 5px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 2px 2px 2px #ccc;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.btn-group {
+			margin-bottom: 10px;
+		}
+
+		.btn {
+			padding: 5px;
+			margin-right: 5px;
+			border-radius: 5px;
+			border: none;
+			background-color: #00c8ff;
+			color: #fff;
+			cursor: pointer;
+		}
+
+		.btn:hover {
+			background-color: #0096c9;
+		}
+	</style>
+</head>
+<body>
+	<div class="btn-group">
+		<button class="btn" onclick="paintAll()">Paint All</button>
+		<button class="btn" onclick="resetAll()">Reset All</button>
+		<button class="btn" onclick="addItem()">+</button>
+		<button class="btn" onclick="removeItem()">-</button>
+	</div>
+
+	<ul id="mockList">
+		<li id="item1">Item 1</li>
+		<li id="item2">Item 2</li>
+		<li id="item3">Item 3</li>
+		<li id="item4">Item 4</li>
+		<li id="item5">Item 5</li>
+	</ul>
+
+	<script>
+		/* #00c8ff - barva pozadi po upravach*/
+		/* #fff - barva pisma po uprave*/
+
+		const list = document.getElementById('mockList');
+		const allItems = list.children;
+
+		function paintAll() {
+			for(let i = 0; i < allItems.length; i++) {
+			console.log(allItems[i].textContent);
+
+			allItems[i].style.color = '#fff';
+			allItems[i].style.backgroundColor = '#00c8ff';
+			}
+		}
+
+		function resetAll() {
+			for(let i = 0; i < allItems.length; i++) {
+			console.log(allItems[i].textContent);
+
+			allItems[i].style.color = '#000000';
+			allItems[i].style.backgroundColor = '#ffffff';
+			}
+		}
+
+		function addItem() {
+			const newItem = document.createElement('li');
+
+			newItem.textContent = 'Item ' + (list.children.length + 1);
+			list.appendChild(newItem);
+		}
+
+		function removeItem() {
+			if(list.children.length > 0) {
+				list.removeChild(list.lastElementChild);
+			}
+		}
+	</script>
+</body>
+</html>

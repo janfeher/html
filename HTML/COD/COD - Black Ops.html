@@ -1,0 +1,60 @@
+<html>
+    <head >
+        <style>
+            body {
+                background-color: darkgreen;
+                font-size: larger;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                /* styly v body mají vliv na celou stránku, ale mají nejnižší prioritu
+                   specifický styl například pro nadpis h1 ho nahradí
+                */
+            }
+
+            h1 {
+                /* h1 až h6 jsou presety velikosti písmen, h1 je největší,
+                   h4 je výchozí velikost písma
+                   všechno si můžeš nastavit podle sebe pomocí stylů
+                */
+                text-align: center;
+                font-size: xxx-large;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+                /* prioritu mají fonty na začátku, pokud nejsou v počítači nainstalované, výběr postupuje směrem doprava */
+            }
+
+            /* # označuje prvky podle jejich ID
+               používají se pro specifické úpravy,
+               html povoluje použít 1 ID pro více prvků,
+               ale mělo by platit 1 ID == 1 prvek
+            */
+            #helicopter {
+                float: right;
+            }
+
+            /* class - to samé co ID, ale pro více prvků stejného typu */
+            .image {
+                width: 50%;
+            }
+        </style>
+        <h1>Call Of Duty: Black Ops</h1>
+        <img src="https://cdn.aktivcommunication.cz/images/products/screens/206/8.jpg" class="image" id="helicopter" alt="Helicopter mission">
+    </head>
+
+    <body>
+        
+        <p>Call of Duty: Black Ops je akční počítačová hra z pohledu první osoby. U studia Treyarch je sedmým přírůstkem do série Call of Duty.</p>
+        <!-- <p> a </p> ohraničují odstavec, mezera mezi odstavci se tvoří automaticky -->
+        <p>Hra se odehrává v období studené války, přesněji mezi lety 1945 až 1968. Hra je vyprávěna zvláštním způsobem – vzpomínkami. V těch se hráč nesouvisle přemisťuje v různých obdobích života agenta Masona. Ve hře vystupuje mnoho známých postav (americký prezident J. F. Kennedy, americký ministr obrany Robert McNamara, kubánský diktátor Fidel Castro). Hlavními hrdiny jsou agent Alex Mason, agent Jason Hudson, Viktor Reznov, Gregori Weaver, Frank Woods a Bowman. Hrát pak lze nejen za Masona, ale i za Reznova a Hudsona.</p>
+        <p style="text-align: right;">
+            <!-- inline styly mají nejvyšší prioritu, ale jsou nepřehledné a není vhodné je využívat v žádném případě, alternativa je např. id -->
+            Zdroj: <a href="https://cs.wikipedia.org/wiki/Call_of_Duty:_Black_Ops">wikipedie</a></p>
+        <p>Mé oblíbené věci ze hry:
+        <ol>
+            <li>Fyzika</li>
+            <li>Příběh</li>
+            <li>Bitva ve vrtulníku</li>
+        </ol>
+        </p>
+        <!-- href vytvoří klikatelný odkaz na místě, kde se vytvoří prvek -->
+        <a href="https://www.callofduty.com/blackops"><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/42700/capsule_616x353.jpg?t=1654809667" class="image" alt="Black Ops"></a>
+    </body>
+</html>

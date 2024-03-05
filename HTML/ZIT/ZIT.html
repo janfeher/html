@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Poznámky ZIT</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <h1>Poznámky ZIT</h1>
+    
+        <h2>IPv4</h2>
+        <p>
+            <ul>
+                <li>IPv4 - adresa zařízení v síti</li>
+                <li>První čtyři části - síť, druhé čtyři části - host</li>
+                <li>Čtyři části, 32 bitů, části oddělované tečkou</li>
+                <li>169.264.0.0 a 169.254.255.255 jsou jiní hosti ve stejné síti</li>
+            </ul>
+        </p>
+    
+        <h2>Rozdělování adres</h2>
+        <p>
+            <ul>
+                <li>V síti funguje DHCP server, který určuje přidělování adres</li>
+                <li>Když není DHCP server k dispozici, OS vybírá z rozsahu adres k dispozici</li>
+            </ul>
+        </p>
+    
+        <h2>Masky sítí binárně a dekadicky</h2>
+        <p>
+            <h4>Maska sítě: /20</h4>
+                <ul>
+                    <li>Binárně: 11111111.11111111.11110000.00000000</li>
+                    <li>Dekadicky: 255.255.240.0</li>
+                </ul>
+        
+            <h4>Maska sítě: /24</h4>
+                <ul>
+                    <li>Binárně: 11111111.11111111.11111111.00000000</li>
+                    <li>Dekadicky: 255.255.255.0</li>
+                </ul>
+        </p>
+    
+        <p>
+            <h4>Maximální počet hostů s maskami /20 a /24</h4>
+                <ol>
+                    <li>/20 - 4096</li>
+                    <li>/24 - 256</li>
+                </ol>
+    
+            <h3>Adresa sítě, maska sítě a maximální počet hostů:</h3>
+                <h4>Adresa:</h4>
+                168.252.39.3/22    
+                    <h4>Adresa sítě:</h4>
+                        <ol>
+                            <li>Binárně: 10101000.11111100.00100111.00000011</li>
+                            <li>Decimálně: 168.252.36.0</li>
+                        </ol>
+
+                    <h4>Maska sítě</h4>
+                        <ol>
+                            <li>Binárně: 11111111.11111111.11111100.00000000</li>
+                            <li>Decimálně: 255.255.252.0</li>
+                        </ol>
+                    
+                    <h4>Adresa broadcastu:</h4>
+                        <ol>
+                            <li>Binárně: 10101000.11111100.00100111.</li>
+                            <li>Decimálně: 168.252.</li>
+                        </ol>
+        </p>
+    </body>
+</html>

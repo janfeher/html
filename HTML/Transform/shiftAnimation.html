@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {
+                width: 50px;
+                height: 50px;
+                margin: 25px;
+                background-color: #0030ff;
+                border-radius: 50%;
+                position: absolute;
+                opacity: 1;
+            }
+
+            div:hover {
+                animation: fade 2000ms linear infinite;
+            }
+
+            @keyframes fade {
+                0% {
+                    opacity: 1;
+                    -webkit-transform: translateX(0px) translateY(0px);
+                    background-color: blue;
+                }
+
+                20% {
+                    opacity: 1;
+                    -webkit-transform: translateX(0px) translateY(150px);
+                    background-color: blueviolet;
+                }
+
+                40% {
+                    opacity: 1;
+                    -webkit-transform: translateX(150px) translateY(150px);
+                    background-color: violet;
+                }
+
+                60% {
+                    opacity: 1;
+                    -webkit-transform: translateX(150px) translateY(0px);
+                    background-color: #00aaff;
+                }
+
+                80% {
+                    opacity: 1;
+                    -webkit-transform: translateX(150px) translateY(0px);
+                    -webkit-transform: translateX(0px) translateY(0px);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+</html>
